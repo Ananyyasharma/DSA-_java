@@ -46,7 +46,7 @@ Constraints:
 0 <= val <= 100
  */
 
- class Solution {
+ class RemoveElement {
     public int removeElement(int[] nums, int val) {
       if(nums.length==0){
         return 0;
