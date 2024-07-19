@@ -1,5 +1,11 @@
+import org.w3c.dom.Node;
+
 class binarytree{
     
+    /**
+     * @param parent
+     * @return
+     */
     public Node createTree(int parent[]) {
         Node root = null;
         Node tree[] = new Node[parent.length];
