@@ -6,6 +6,9 @@ Each time you can either climb 1 or 2 steps. In how many distinct ways can you c
 Output: 2
 Explanation: There are two ways to climb to the top.
  */
+
+import java.util.Arrays;
+
 class climbingstairs {
     public int climbStairs(int n) {
 
