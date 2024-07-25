@@ -1,3 +1,5 @@
+import javax.swing.tree.TreeNode;
+
 class balancebt  {
     public boolean isBalanced(TreeNode root) {
         // If the tree is empty, we can say it’s balanced...
@@ -7,11 +9,15 @@ class balancebt  {
 		return true;
 	}
     // Create a function to return the “height” of a current subtree using recursion...
+	/**
+	 * @param root
+	 * @return
+	 */
 	public int Height(TreeNode root) {
         // Base case...
 		if (root == null)  return 0;
         // Height of left subtree...
-		int leftHeight = Height(root.left);
+		final int leftHeight = Height(root.left);
         // Height of height subtree...
 		int rightHight = Height(root.right);
         // In case of left subtree or right subtree unbalanced, return -1...
